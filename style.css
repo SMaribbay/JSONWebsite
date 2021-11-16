@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+body{
+  margin: auto;
+  background-color: #BF3B0B;
+}
+h2{
+text-align: center;
+font-family: 'Mochiy Pop P One', sans-serif;
+color: #D9BB62;
+}
+.faveMovies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 4px;
+  font-size: 5vmin;
+  color: #D9BB62;
+  background-color: #592614;
+}
+  #favorites{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: 100vh;
+  }
+  .contentCard{
+    margin: 5vmin;
+      background-color: #74c396;
+      padding: 5vmin;
+      border-radius: 18px;
+      color: #027a4c;
+      text-align: center;
+      font-family: 'Yeseva One', cursive;
+  }
+  .filmTitle{
+font-family: 'Mochiy Pop P One', sans-serif;
+}
