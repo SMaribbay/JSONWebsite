@@ -40,36 +40,42 @@ let favoriteMovies = [
 "film" : "Mystic River",
 "poster" : "https://upload.wikimedia.org/wikipedia/en/9/93/Mystic_River_poster.jpg",
 "director" : "Clint Eastwood",
+},
+{
+  "film" : "21 Grams",
+  "poster" : "https://i.ebayimg.com/images/g/Z7YAAMXQUY1Q9Xo-/s-l500.jpg",
+  "director" : "Alejandro  Iñárritu",
 }
 ];
 
 for (let i = 0; i < favoriteMovies.length; i++) {
   creatingElements(favoriteMovies[i]);
 }
-function creatingElements(favoriteMovies) {
+function creatingElements(incomingMovie) {
 
-  let contentCard = document.createElement("div");
-  contentCard.classList.add ("contentCard);
+  let newMovie = document.createElement("div");
+  newMovie.classList.add ("newMovie");
 
   let filmTitle = document.createElement("h2");
   filmTitle.classList.add ("filmTitle");
-  filmTitle.innerText = favoriteMovies['film'];
-  contentCard.appendChild(filmTitle);
+  filmTitle.innerText = incomingMovie['film'];
+  newMovie.appendChild(filmTitle);
 
 
   let innerCard = document.createElement("DIV");
-  contentCard.appendChild(innerCard);
+  newMovie.appendChild(innerCard);
   innerCard.classList.add("innerCard");
   let innerTextOne = document.createElement("p");
-  innerTextOne.innerText = favoriteMovies['director'];
+  innerTextOne.innerText = incomingMovie['director'];
   innerCard.appendChild(innerTextOne);
-  innerCard.appendChild(innerTextTwo);
+
 
 
   let cardImage = document.createElement("IMG");
   cardImage.classList.add("cardImage");
-  cardImage.src = favoriteMovies["poster"];
-  contentCard.appendChild(cardImage);
+  cardImage.src = incomingMovie["poster"];
+  newMovie.appendChild(cardImage);
 
 
-  firstDiv.appendChild(contentCard);
+  firstDiv.appendChild(newMovie);
+}

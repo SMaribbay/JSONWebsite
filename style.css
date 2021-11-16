@@ -28,15 +28,26 @@ font-family: 'Mochiy Pop P One', sans-serif;
       flex-direction: row;
       height: 100vh;
   }
-  .contentCard{
+  .newMovie{
     margin: 5vmin;
-      background-color: #74c396;
+      background-color: #401F13;
       padding: 5vmin;
-      border-radius: 18px;
-      color: #027a4c;
+      border-radius: 5px;
+      color: #F2B705;
       text-align: center;
-      font-family: 'Yeseva One', cursive;
+    font-family: 'Mochiy Pop P One', sans-serif;
   }
   .filmTitle{
 font-family: 'Mochiy Pop P One', sans-serif;
+}
+.contentItem {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5vmin;
+  height: 100%;
+}
+.cardImage{
+width: 100%;
+height: 400px;
 }
