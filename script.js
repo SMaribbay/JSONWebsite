@@ -79,3 +79,9 @@ function creatingElements(incomingMovie) {
 
   firstDiv.appendChild(newMovie);
 }
+{
+  const config = {
+
+  }
+     new Glide('.glide',).mount()
+}
