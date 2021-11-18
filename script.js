@@ -62,19 +62,19 @@ function creatingElements(incomingMovie) {
   newMovie.appendChild(filmTitle);
 
 
-  let innerCard = document.createElement("DIV");
-  newMovie.appendChild(innerCard);
-  innerCard.classList.add("innerCard");
+  let directorSlide = document.createElement("DIV");
+  newMovie.appendChild(directorSlide);
+  directorSlide.classList.add("directorSlide");
   let innerTextOne = document.createElement("p");
   innerTextOne.innerText = incomingMovie['director'];
-  innerCard.appendChild(innerTextOne);
+  directorSlide.appendChild(innerTextOne);
 
 
 
-  let cardImage = document.createElement("IMG");
-  cardImage.classList.add("cardImage");
-  cardImage.src = incomingMovie["poster"];
-  newMovie.appendChild(cardImage);
+  let poster = document.createElement("IMG");
+  poster.classList.add("poster");
+  poster.src = incomingMovie["poster"];
+  newMovie.appendChild(poster);
 
 
   firstDiv.appendChild(newMovie);
